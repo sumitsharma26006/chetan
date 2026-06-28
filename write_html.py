@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+﻿f = open('chat/templates/chat/index.html', 'w', encoding='utf-8')
+f.write("""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -79,4 +80,6 @@ messagesDiv.lastChild.textContent=data.reply||data.error;
 }
 </script>
 </body>
-</html>
+</html>""")
+f.close()
+print("Done!")
